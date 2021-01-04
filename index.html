@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>		
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+<title>123Movies – Official Website</title>
+
+<base target="_blank">
+
+<style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+	.gsc-result-info { display:none;}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+		   main {
+   max-width: inherit !important;
+    margin: 0 !important;
+    width: 100% !important;
+    padding: 0 !important;
+}
+		  body {
+			  font-family:roboto;
+			  font-weight:400;
+			  line-height:32px;
+			  font-size:18px;background-color:#E5E5E5;
+		  }
+	html, body {
+	margin:0;padding:0;	
+	}
+		  .main {
+			  width:100%;
+			  max-width:750px;
+			  margin:0 auto;
+		  }
+		  h1, h2, h3,strong { font-weight:500;}
+		  h1 { font-size:28px;margin-top:20px;margin-bottom:10px;}
+		  h2 { font-size:20px;margin-bottom:10px;}
+	  </style>
+	  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+ <style>
+		input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+    border-color: #DFE1E5;
+    border-radius: 0px;
+    padding: 5px;
+    margin-bottom: 0;
+    margin-top: -5px;
+}
+		.gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
+    background-color: #ffffff;
+    background-image: none;
+    filter: none;
+    margin-top: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    display: inline-block;
+    background: #2c816b;
+    color: #fff;
+    font-size: 26px;
+    line-height: 36px;
+    border-radius: 0 5px 5px 0;
+    border: 0;
+    padding-bottom: 14px;
+    padding-top: 7px;
+}
+		.logo svg {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+		.gsc-input-box {
+border: 1px solid #dfe1e5;
+    background: #fff;
+    border-radius: 9px;
+}
+
+	@media only screen and (max-width: 600px) {
+.searchbox {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 0;
+}
+.gsc-search-button-v2 {
+    width: auto;
+    padding: 11px 10px;
+    margin: 0;
+    border-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+		.logo {display:none;}
+}
+
+	@media only screen and (max-width: 600px) {
+.searchbox {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 0;
+}
+.gsc-search-button-v2 {
+    width: auto;
+    padding: 11px 14px;
+    margin: 0;
+    border-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    line-height: 29px;
+    padding-bottom: 17px;
+}
+}
+#main {
+max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 6vh;
+}
+	
+.top	h3 {
+color: #194d82;
+    font-size: 62px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: roboto;
+    padding-top: 4vh;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    letter-spacing: -.01em;
+	}
+	.gsc-control-cse {
+    border-color: inherit;
+    background-color: inherit;
+    border-radius: 10px;
+    box-shadow: inherit;
+    border: inherit;
+}
+	.gsc-search-box-tools .gsc-search-box .gsc-input {
+    padding-right: 12px;
+    font-size: 18px !important;
+		    background: inherit !important;
+    border-radius: 5px;
+}
+	 .gsc-search-button {
+    margin-left: -13px !important;
+}
+	.gsc-input-box {
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    padding: 6px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px 0 0 5px;
+    line-height: 34px;
+}
+	.gsc-search-button-v2 svg {
+    fill: #ffffff;
+    width: 25px;
+    height: 24px;
+    top: 4px;
+    position: relative;
+}
+	.searchbox {
+	margin-top:10px;	
+	}
+		.top {
+    width: 100%;
+			margin-bottom:30px;
+}
+		p {margin-top:30px;}
+
+ 
+
+ 	
+	 .gs-webResult div.gs-visibleUrl-short { display:none}
+	 .gsc-webResult.gsc-result.gsc-promotion { 
+	
+	  border-bottom: 1px dashed #ffb090;
+	 }
+
+	 .gs-promotion-text-cell {
+    margin-left: 0;
+    margin-right: 8px;
+}
+		.gsc-search-box-tools.gsc-search-box.gsc-input {background:none !important;}
+		  .gsc-results.gsc-webResult {
+			  background-color:white;
+		  }
+		  .gcsc-find-more-on-google,img.gsc-branding-img, img.gsc-branding-img-noclear, img.gcsc-branding-img, img.gcsc-branding-img-noclear 
+		{display:none !important;
+		  }
+		  .gsc-results {width:100% !important;}
+	 .gsc-webResult .gsc-result,.gsc-webResult .gsc-result:hover {
+   padding: 10px;
+    border-bottom: 1px dashed #ffb090;
+}
+	 .gsc-control-cse .gs-spelling, .gsc-control-cse .gs-result .gs-title, .gsc-control-cse .gs-result .gs-title * {
+ 
+    margin-top: 10px;
+    margin-bottom: -3px;text-align:left;
+}
+.gsst_a .gscb_a {
+    color: #a1b9ed;
+    cursor: pointer;
+    display: none;
+}
+
+	 .gsc-results.gsc-webResult {
+    background-color: inherit !important;
+}
+	 .gsc-webResult .gsc-result, .gsc-webResult .gsc-result:hover {
+    padding: 10px;
+    border-bottom: 1px solid #d4d4d4;
+    margin-bottom: 7px;
+}
+	 .gs-bidi-start-align.gs-visibleUrl.gs-visibleUrl-long { display:none; }
+	 .gs-result .gs-image, .gs-result .gs-promotion-image {
+    vertical-align: middle;
+    border: 0;
+}
+.gs-web-image-box, .gs-promotion-image-box {
+    float: left;
+    padding: 2px 8px 2px 0;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 8px;
+}
+	 .gs-webResult .gs-snippet, .gs-fileFormatType {
+    color: #333333;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 10px;
+}
+	 .gs-web-image-box .gs-image, .gs-promotion-image-box .gs-promotion-image {
+    border: 0px solid #e2e2e2;
+    max-width: 122px !important;
+    max-height: 180px !important;
+}
+.gs-web-image-box, .gs-promotion-image-box {
+    max-width: 122px !important;
+    width: auto !important;
+    margin-right: 8px;
+}
+	 .gsc-webResult .gsc-result, .gsc-webResult .gsc-result:hover {
+    padding: 10px;
+    border-bottom: 1px solid #d4d4d4;
+    margin-bottom: 7px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+	 .gs-webResult .gs-snippet, .gs-fileFormatType {
+		font-family:open sans; 
+	 }
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #2c816b;
+	font-size:18px !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #2c816b;
+	font-size:18px !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #2c816b;
+	font-size:18px !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #2c816b;
+	font-size:18px !important;
+}
+	 .gsib_a {
+    padding: 7px 9px 2px 9px;
+}
+	 .index-page, .error-page {
+    padding: 100px;
+    text-align: center;
+}
+.logo{content:url("//cdn-search.net/cna/123movies-logo.svg")}
+.index-page,.error-page{padding:150px;text-align:center}
+.index-page .logo {
+    display: inline-block;
+    width: 315px;
+    height: 80px;
+    margin-top: 37px;
+    margin-bottom: 0;
+}
+	</style> 
+        <link href="//fonts.googleapis.com" rel="dns-prefetch" />
+        <link crossorigin="" href="//fonts.googleapis.com" rel="preconnect" />
+
+        <link href="//cse.google.com" rel="dns-prefetch" />
+        <link crossorigin="" href="//cse.google.com" rel="preconnect" />
+		
+        <link href="//cdn-search.net/" rel="dns-prefetch" />
+        <link crossorigin="" href="//cdn-search.net/" rel="preconnect" />
+
+<link rel="shortcut icon" href="//cdn-search.net/cna/favicon.ico?v=qAJX02G2mv">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+        <meta content="#da532c" name="msapplication-TileColor" />
+        <meta content="#ffffff" name="theme-color" />
+ <link href="//cdn-search.net/cna/app.css?v=4" rel="stylesheet" />
+  
+
+    </head>
+    <body>
+    
+	
+	<main class="container">
+            <div class="index-page" style="padding-bottom:20px;">
+                <a href="#" class="logo"></a>
+             
+						
+
+	<div class="searchbox"  style="max-width: 725px;display:block;
+    margin: 0 auto;">
+	
+				<div class="gcse-search" enablehistory="false" enableAutoComplete="true"></div>
+         
+		
+	</div>
+					
+		
+<div class="clear"></div>
+	<div class="results">
+	<script async src="https://cse.google.com/cse.js?cx=partner-pub-3341995795837373:9251248805"></script>
+
+	</div>
+
+
+	
+	<style>
+	#queries a {
+    margin-left: 14px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+	</style>
+	
+
+
+      <style>
+		body {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #e5e5e5;
+}
+		input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+    border-color: #DFE1E5;
+    border-radius: 0px;
+    padding: 5px;
+    margin-bottom: 0;
+    margin-top: -5px;
+}
+		.gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
+    background-color: #ffffff;
+    background-image: none;
+    filter: none;
+    margin-top: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    display: inline-block;
+    background: #2c816b;
+    color: #fff;
+    font-size: 26px;
+    line-height: 36px;
+    border-radius: 0 5px 5px 0;
+    border: 0;
+    padding-bottom: 14px;
+    padding-top: 7px;
+}
+		.logo svg {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+		.gsc-input-box {
+border: 1px solid #dfe1e5;
+    background: #fff;
+    border-radius: 9px;
+}
+
+	@media only screen and (max-width: 600px) {
+.searchbox {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 0;
+}
+.gsc-search-button-v2 {
+    width: auto;
+    padding: 11px 10px;
+    margin: 0;
+    border-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+		.logo {display:none;}
+}
+
+	@media only screen and (max-width: 600px) {
+.searchbox {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 0;
+}
+.gsc-search-button-v2 {
+    width: auto;
+    padding: 11px 14px;
+    margin: 0;
+    border-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    line-height: 29px;
+    padding-bottom: 17px;
+}
+}
+#main {
+max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 6vh;
+}
+	
+.top	h3 {
+color: #194d82;
+    font-size: 62px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: roboto;
+    padding-top: 4vh;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    letter-spacing: -.01em;
+	}
+	.gsc-control-cse {
+    border-color: inherit;
+    background-color: inherit;
+    border-radius: 10px;
+    box-shadow: inherit;
+    border: inherit;
+}
+	.gsc-search-box-tools .gsc-search-box .gsc-input {
+    padding-right: 12px;
+    font-size: 18px !important;
+		    background: inherit !important;
+    border-radius: 5px;
+}
+	 .gsc-search-button {
+    margin-left: -13px !important;
+}
+	.gsc-input-box {
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    padding: 6px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px 0 0 5px;
+    line-height: 34px;
+}
+	.gsc-search-button-v2 svg {
+    fill: #ffffff;
+    width: 25px;
+    height: 24px;
+    top: 4px;
+    position: relative;
+}
+	.searchbox {
+	margin-top:10px;	
+	}
+		.top {
+    width: 100%;
+			margin-bottom:30px;
+}
+		p {margin-top:30px;}
+
+ 
+ 	
+	 .gs-webResult div.gs-visibleUrl-short { display:none}
+	 .gsc-webResult.gsc-result.gsc-promotion { 
+	
+	  border-bottom: 1px dashed #ffb090;
+	 }
+
+	 .gs-promotion-text-cell {
+    margin-left: 0;
+    margin-right: 8px;
+}
+	 .gsc-adBlock {display:block;}
+		.gsc-search-box-tools.gsc-search-box.gsc-input {background:none !important;}
+		  .gsc-results.gsc-webResult {
+			  background-color:white;
+		  }
+		  .gcsc-find-more-on-google,img.gsc-branding-img, img.gsc-branding-img-noclear, img.gcsc-branding-img, img.gcsc-branding-img-noclear 
+		{display:none !important;
+		  }
+		  .gsc-results {width:100% !important;}
+	 .gsc-webResult .gsc-result,.gsc-webResult .gsc-result:hover {
+   padding: 10px;
+    border-bottom: 1px dashed #ffb090;
+}
+
+.gsst_a .gscb_a {
+    color: #a1b9ed;
+    cursor: pointer;
+    display: none;
+}
+
+	 .gsc-results.gsc-webResult {
+    background-color: inherit !important;
+}
+.gsc-webResult .gsc-result, .gsc-webResult .gsc-result:hover {
+    padding: 0;
+    border-bottom: 1px solid #d4d4d4;
+    margin-bottom: 7px;
+    padding-top: 0px;
+    padding-bottom: 18px;
+}
+	 .gs-bidi-start-align.gs-visibleUrl.gs-visibleUrl-long { display:none; }
+	 .gs-result .gs-image, .gs-result .gs-promotion-image {
+    vertical-align: middle;
+    border: 0;
+}
+.gs-web-image-box, .gs-promotion-image-box {
+    float: left;
+    padding: 2px 8px 2px 0;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 8px;
+}
+	 .gs-webResult .gs-snippet, .gs-fileFormatType {
+    color: #333333;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 10px;
+}
+.gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b, .gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b, .gs-imageResult a.gs-title:visited, .gs-imageResult a.gs-title:visited b {
+    color: #000000;
+}
+.gsc-control-cse .gs-spelling, .gsc-control-cse .gs-result .gs-title, .gsc-control-cse .gs-result .gs-title * {
+
+    text-decoration: inherit;
+}
+.gsc-control-cse .gs-spelling, .gsc-control-cse .gs-result .gs-title, .gsc-control-cse .gs-result .gs-title * {
+    font-size: 15px;
+}
+	 .gs-web-image-box .gs-image, .gs-promotion-image-box .gs-promotion-image {
+    border: 0px solid #e2e2e2;
+    max-width: 122px !important;
+    max-height: 180px !important;
+}
+.gs-web-image-box, .gs-promotion-image-box {
+    max-width: 122px !important;
+    width: auto !important;
+    margin-right: 8px;
+}
+
+	 .gs-webResult .gs-snippet, .gs-fileFormatType {
+		font-family:open sans; 
+	 }
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #2c816b;
+	font-size:18px !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #2c816b;
+	font-size:18px !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #2c816b;
+	font-size:18px !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #2c816b;
+	font-size:18px !important;
+}
+			@media (max-width: 768px) {
+.index-page {
+    padding: 10px !important;
+}
+
+			}
+	 .gsib_a {
+    padding: 7px 9px 2px 9px;
+}
+			.gsc-above-wrapper-area { display:none;}
+	 .index-page, .error-page {
+    padding: 100px;
+    text-align: center;
+		 padding-top:18vh;
+		 min-height:100vh;
+}
+			.gsc-results .gsc-cursor-box {
+    margin: 10px;
+    margin-top: 26px;
+}
+			.gsc-results-wrapper-visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: #fff;
+    padding: 10px;
+}
+			.gsc-results .gsc-cursor-box .gsc-cursor-page {
+    border-color: #2C816B;
+    background-color: #FFFFFF;
+    color: #2C816B;
+    padding: 6px 7px;
+    margin-right: 7px;
+    border-radius: 0px;
+    border: 1px solid #e2e2e2;
+}
+			.gsc-adBlock {
+    display: block;
+    border-bottom: 0 !important;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    border-color: #2C816B;
+    background-color: #EEEEEE;
+    color: #2C816B;
+}
+			.gs-webResult .gs-snippet, .gs-fileFormatType {
+    color: #333333;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 6px;
+    font-family: arial;
+}
+			.gs-webResult.gs-result a.gs-title:hover, .gs-webResult.gs-result a.gs-title:hover b, .gs-imageResult a.gs-title:hover, .gs-imageResult a.gs-title:hover b {
+    color: #000;font-weight:400;
+}
+.gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b, .gs-imageResult a.gs-title:visited, .gs-imageResult a.gs-title:visited b {
+    color: #000;font-weight:400;
+}
+			.gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b {
+    color: #000;
+				font-weight:400;
+}
+			.gs-webResult .gs-snippet, .gs-fileFormatType {
+    color: #333333;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 6px;
+    font-family: arial;
+}
+		.gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
+    background-color: #ffffff;
+    background-image: none;
+    filter: none;
+    margin-top: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    display: inline-block;
+    background-color: #2c816b;
+    color: #fff;
+    font-size: 26px;
+    line-height: 36px;
+    border-radius: 0 5px 5px 0;
+    border: 0;
+    padding-bottom: 14px;
+    padding-top: 7px;
+}
+		  b {font-weight:400;}
+          footer {
+                  background-color: #1e1e1e;
+    color: #fff;
+    bottom: 0;
+    padding: 20px;
+
+          }
+          footer h1 {
+                  font-size: 16px;
+                  }
+          footer h2 {
+                  font-size: 14px;
+                  }
+	</style>        
+				
+				<div style="clear:both;"></div>	
+             
+            </div>
+			
+		
+        </main>
+
+</body>
+</html>
+
